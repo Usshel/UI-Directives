@@ -1,0 +1,27 @@
+
+  <div style="display: inline-block;">
+    <button mat-mini-fab showSnackbarOnClick="I am here!!!!">
+        <mat-icon>add</mat-icon>
+    </button>
+  </div>
+<div style="display: inline-block;" >
+  <button mat-mini-fab confirmDialog="Are you sure?" (confirmed)="onConfirmed($event)"> 
+    open 
+  </button>
+</div>
+
+<div style="display: inline-block;" [bgCarousel]="['rgb(255, 0, 255)', 'rgb(255, 0, 0)','rgb(255, 123, 23)']">
+asdasdasdasdasdasdsadasasd
+</div>
+
+<div style="display: inline-block; border:solid; border-color: red ; cursor: grab;" moveable>
+dasdasda
+</div>
+
+
+
+<div data-test-id="directive">
+  <div *featureFlag="''; else fallback">Enabled</div>
+</div>
+<ng-template #fallback>Fallback</ng-template>
+
